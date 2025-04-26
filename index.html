@@ -53,4 +53,106 @@
             box-shadow: 0 2px 15px rgba(0,0,0,0.2);
         }
 
-        table
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 20px;
+            border-bottom: 2px solid #444;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #111;
+            color: #f9d342;
+        }
+
+        td {
+            background-color: #222;
+            color: #fff;
+        }
+
+        td img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+
+        td a {
+            color: #5cb85c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+        }
+
+        /* إضافة تأثير للروابط عند المرور عليها */
+        td a {
+            transition: color 0.3s ease;
+        }
+
+        td a:hover {
+            color: #d9534f;
+        }
+
+        /* إعدادات الإعلان */
+        .ads {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #111;
+            color: #f9d342;
+            border-radius: 8px;
+        }
+
+        .ads p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        HM-TV | بث مباشر مباريات
+    </div>
+
+    <div class="matches">
+        <h2>مباريات اليوم</h2>
+        <table>
+            <tr>
+                <th>الفريق 1</th>
+                <th>الفريق 2</th>
+                <th>الساعة</th>
+                <th>رابط المشاهدة</th>
+            </tr>
+            <tr>
+                <td>ريال مدريد</td>
+                <td>برشلونة</td>
+                <td>22:00</td>
+                <td><a href="#">للمشاهدة</a></td>
+            </tr>
+            <tr>
+                <td>ليفربول</td>
+                <td>مانشستر سيتي</td>
+                <td>19:30</td>
+                <td><a href="#">للمشاهدة</a></td>
+            </tr>
+            <tr>
+                <td>الوداد</td>
+                <td>الرجاء</td>
+                <td>21:00</td>
+                <td><a href="#">للمشاهدة</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ads">
+        <p>🔴 إعلان هنا 🔴</p>
+    </div>
+</body>
+</html>

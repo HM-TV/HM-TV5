@@ -98,13 +98,36 @@
             color: #fff;
         }
 
-        /* إضافة تأثير للروابط عند المرور عليها */
-        td a {
-            transition: color 0.3s ease;
+        /* تنسيق لعرض كل فريق */
+        .team {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #444;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
         }
 
-        td a:hover {
-            color: #fff;
+        .team img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        .team-name {
+            font-size: 18px;
+            font-weight: bold;
+            flex-grow: 1;
+        }
+
+        .team1 {
+            background-color: #2d8ac4; /* لون الفريق 1 */
+        }
+
+        .team2 {
+            background-color: #d93c3c; /* لون الفريق 2 */
         }
 
         /* إعدادات الإعلان */
@@ -137,20 +160,50 @@
                 <th>رابط المشاهدة</th>
             </tr>
             <tr>
-                <td>ريال مدريد</td>
-                <td>برشلونة</td>
+                <td>
+                    <div class="team team1">
+                        <span class="team-name">ريال مدريد</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Real_Madrid_CF_logo_2017.svg/800px-Real_Madrid_CF_logo_2017.svg.png" alt="ريال مدريد">
+                    </div>
+                </td>
+                <td>
+                    <div class="team team2">
+                        <span class="team-name">برشلونة</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/FC_Barcelona_2019_logo.svg/800px-FC_Barcelona_2019_logo.svg.png" alt="برشلونة">
+                    </div>
+                </td>
                 <td>22:00</td>
                 <td><a href="#">للمشاهدة</a></td>
             </tr>
             <tr>
-                <td>ليفربول</td>
-                <td>مانشستر سيتي</td>
+                <td>
+                    <div class="team team1">
+                        <span class="team-name">ليفربول</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Liverpool_FC_logo_2015.png" alt="ليفربول">
+                    </div>
+                </td>
+                <td>
+                    <div class="team team2">
+                        <span class="team-name">مانشستر سيتي</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Manchester_City_FC_badge.svg" alt="مانشستر سيتي">
+                    </div>
+                </td>
                 <td>19:30</td>
                 <td><a href="#">للمشاهدة</a></td>
             </tr>
             <tr>
-                <td>الوداد</td>
-                <td>الرجاء</td>
+                <td>
+                    <div class="team team1">
+                        <span class="team-name">الوداد</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Wydad_Casablanca_logo.svg/800px-Wydad_Casablanca_logo.svg.png" alt="الوداد">
+                    </div>
+                </td>
+                <td>
+                    <div class="team team2">
+                        <span class="team-name">الرجاء</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/RAJA_Casablanca_logo.png" alt="الرجاء">
+                    </div>
+                </td>
                 <td>21:00</td>
                 <td><a href="#">للمشاهدة</a></td>
             </tr>
@@ -162,4 +215,3 @@
     </div>
 </body>
 </html>
-
